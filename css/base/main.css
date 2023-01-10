@@ -9,3 +9,98 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: aquamarine;
 }
+
+.container {
+    width: 100%;
+    display: inline-block;
+    background-color: bisque;
+
+}
+
+header.container {
+    background-color: #18181B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.header-left{
+    display: flex;
+    gap: 25px;
+}
+
+.logo {
+    float: left;
+    margin-left: 10px;
+}
+
+.header-left > a > img {
+    height: 25px;
+    object-fit: contain;
+    float: left;
+}
+
+.browse,
+.fa-ellipsis-v
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.25em;
+}
+
+.search{
+    width: 25%;
+    background-color: #3D3D40;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.search > div {
+    padding: 0.5em;
+    line-height: 1.25em;
+    float: left;
+    color: #878788;
+}
+
+.search > a.fa-search {
+    float: right;
+    padding: 0.25em;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2A2A2D;
+    border-left: 2px solid #18181B;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: -1px;
+}
+
+.header-right {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    line-height: 1.25em;
+    align-items: center;
+}
+
+.header-right > .fa-ship, 
+.header-right > .fa-user{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.login {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    background-color: #2A2A2D;
+    padding: 0.5em 0.75em;
+    border-radius: 0.5em;
+}
+
+.sign-up{
+    background-color: #9147FF;
+}
