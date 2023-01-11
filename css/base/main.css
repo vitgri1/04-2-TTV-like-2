@@ -17,7 +17,7 @@ body{
 .container {
     width: 100%;
     display: inline-block;
-    background-color: bisque;
+    background-color: #0E0E10;
     color: #fff;
 }
 
@@ -338,17 +338,77 @@ header.container {
     line-height: 1.25em;
 }
 
+/* bottom box */
+
 .bottom-box {
-    background-color: darkgreen;
+    padding: 10px;
+    float: right;
+    width: 80%;
+}
+
+.channels {
+    color: #9147FF;
+    text-decoration: none;
 }
 
 .content-bar {
-    background-color: cadetblue;
     display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .bar-item {
-    background-color: #9147FF;
+    width: 200px;
+}
+
+.bar-item > img {
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+    float: left;
+}
+
+.bar-logo {
+    width: 30%;
+    float: left;
+    margin-top: 5px;
+}
+
+.bar-logo > img{
+    width: 100%;
+    float: left;
+}
+
+.bar-desciption {
+    float: left;
+    margin-top: 5px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bar-title,
+.bar-name,
+.bar-game {
+    font-size: 15px;
+    line-height: 1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.bar-title{
+    font-size: 1.2em;   
+}
+
+.bar-lang {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.bar-lang > .lang {
+    font-size: 12px;
 }
 
 @media (max-width: 1200px) {
@@ -357,6 +417,9 @@ header.container {
     .under-3,
     .under-4 {
         display: none;
+    }
+    .bottom-box {
+        width: calc(100% - 60px);
     }
 }
 
