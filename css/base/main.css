@@ -8,13 +8,14 @@ padding: 0;
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: aquamarine;
+    position: relative;
 }
 
 .container {
     width: 100%;
     display: inline-block;
     background-color: bisque;
-
+    color: #fff;
 }
 
 /* header */
@@ -250,4 +251,32 @@ header.container {
 
 .bar-item {
     background-color: #9147FF;
+}
+
+/* footer */
+
+footer.container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #9147FF;
+    display: inline-block;
+}
+
+footer > img {
+    height: 40px;
+    object-fit: contain;
+    float: left;
+}
+
+footer > p {
+    float: left;
+    font-size: 20px;
+    line-height: 1.25em;
+}
+
+footer > a.btn {
+    color: #000;
+    background-color: #fff;
 }
