@@ -134,7 +134,7 @@ header.container {
     .mini{
         display: none;
     }
-    
+}
 /* left column */
 
 .left-column{
@@ -217,4 +217,37 @@ header.container {
         width: auto;
         align-items: center;
     }
+}
+
+/* right column */
+
+.right-column {
+    background-color: burlywood;
+}
+
+.top-box {
+    background-color: chartreuse;
+    display: flex;
+}
+
+.nav-left,
+.nav-right {
+    background-color: brown;
+}
+
+.middle-content {
+    background-color: rebeccapurple;
+}
+
+.bottom-box {
+    background-color: darkgreen;
+}
+
+.content-bar {
+    background-color: cadetblue;
+    display: flex;
+}
+
+.bar-item {
+    background-color: #9147FF;
 }
