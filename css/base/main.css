@@ -1,3 +1,6 @@
+@import '../3rd-party/font-awesome.min.css';
+@import '../components/button.css';
+
 body,
 body * {
 box-sizing: border-box;
@@ -8,13 +11,14 @@ padding: 0;
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: aquamarine;
+    position: relative;
 }
 
 .container {
     width: 100%;
     display: inline-block;
     background-color: bisque;
-
+    color: #fff;
 }
 
 /* header */
@@ -98,14 +102,6 @@ header.container {
     font-size: 1.2em;
 }
 
-.login {
-    text-decoration: none;
-    color: #fff;
-    text-transform: capitalize;
-    background-color: #2A2A2D;
-    padding: 0.5em 0.75em;
-    border-radius: 0.5em;
-}
 .mini {
     display: none;
 }
@@ -250,4 +246,39 @@ header.container {
 
 .bar-item {
     background-color: #9147FF;
+}
+
+/* footer */
+
+footer.container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #9147FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+footer img {
+    height: 40px;
+    object-fit: contain;
+    float: left;
+}
+
+footer p {
+    margin: 0.375em;
+    float: left;
+    font-size: 20px;
+    line-height: 1.25em;
+}
+
+footer a.btn {
+    float: right;
+    color: #000;
+    background-color: #fff;
+    margin-right: 1em;
+    font-size: 16px;
 }
