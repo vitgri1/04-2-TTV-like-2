@@ -17,6 +17,8 @@ body{
 
 }
 
+/* header */
+
 header.container {
     background-color: #18181B;
     display: flex;
@@ -64,6 +66,11 @@ header.container {
     color: #878788;
 }
 
+.search > div:last-of-type {
+    display: none;
+    width: 1.5em;
+}
+
 .search > a.fa-search {
     float: right;
     padding: 0.25em;
@@ -99,11 +106,35 @@ header.container {
     padding: 0.5em 0.75em;
     border-radius: 0.5em;
 }
+.mini {
+    display: none;
+}
 
 .sign-up{
     background-color: #9147FF;
 }
 
+@media (max-width: 640px) {
+    .browse,
+    .search > div:first-of-type,
+    .login{
+        display: none;
+    }
+    .search{
+        width: auto;
+    }
+    .mini,
+    .search > div:last-of-type {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 360px) {
+    .search,
+    .mini{
+        display: none;
+    }
+    
 /* left column */
 
 .left-column{
