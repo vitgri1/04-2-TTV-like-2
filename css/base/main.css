@@ -103,3 +103,87 @@ header.container {
 .sign-up{
     background-color: #9147FF;
 }
+
+/* left column */
+
+.left-column{
+    width: 20%;
+    float: left;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1F1F23;
+}
+
+.left-column > section{
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 1.25em;
+}
+
+.left-column .fa-arrow-left{
+    color: #fff;
+    text-decoration: none;
+    float: right;
+}
+
+.left-column .fa-video-camera{
+    color: #fff;
+    text-decoration: none;
+    display: none;
+    height: 40px;
+    line-height: 40px;
+}
+
+.left-profile-box{
+    width: 100%;
+}
+
+.prof-pic{
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+
+.prof-text {
+    float: left;
+}
+
+.prof-name,
+.prof-game{
+    font-size: 20px;
+    line-height: 1em;
+    color: #fff;
+}
+
+.prof-game{
+    color: #3D3D40;
+}
+
+.prof-num{
+    float: right;
+    color: #fff;
+}
+
+.prof-num::before{
+    content: '•';
+    color: red;
+}
+
+@media (max-width: 1200px) {
+    .left-column .fa-video-camera {
+        display: block;
+    }
+    .left-column > section,
+    .prof-text,
+    .prof-num {
+        display: none;
+    }
+    .left-column {
+        width: auto;
+        align-items: center;
+    }
+}
