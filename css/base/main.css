@@ -113,13 +113,13 @@ header.container {
 @media (max-width: 640px) {
     .browse,
     .search > div:first-of-type,
-    .login{
+    .header-right > .btn{
         display: none;
     }
     .search{
         width: auto;
     }
-    .mini,
+    .header-right > .mini,
     .search > div:last-of-type {
         display: inline-block;
     }
