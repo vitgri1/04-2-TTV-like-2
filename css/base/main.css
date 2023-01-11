@@ -1,3 +1,6 @@
+@import '../3rd-party/font-awesome.min.css';
+@import '../components/button.css';
+
 body,
 body * {
 box-sizing: border-box;
@@ -99,14 +102,6 @@ header.container {
     font-size: 1.2em;
 }
 
-.login {
-    text-decoration: none;
-    color: #fff;
-    text-transform: capitalize;
-    background-color: #2A2A2D;
-    padding: 0.5em 0.75em;
-    border-radius: 0.5em;
-}
 .mini {
     display: none;
 }
@@ -261,25 +256,29 @@ footer.container {
     left: 0;
     width: 100%;
     background-color: #9147FF;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-footer > img {
+footer img {
     height: 40px;
     object-fit: contain;
     float: left;
 }
 
-footer > p {
+footer p {
     margin: 0.375em;
     float: left;
     font-size: 20px;
     line-height: 1.25em;
 }
 
-footer > a.btn {
+footer a.btn {
     float: right;
     color: #000;
     background-color: #fff;
-    margin-right: 2em;
+    margin-right: 1em;
+    font-size: 16px;
 }
