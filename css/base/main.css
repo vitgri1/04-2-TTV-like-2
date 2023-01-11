@@ -232,7 +232,54 @@ header.container {
 }
 
 .middle-content {
-    background-color: rebeccapurple;
+    width: 750px;
+    height: 300px;
+    background-color: #18181B;
+    position: relative;
+}
+
+.middle-content > img {
+    width: 70%;
+    height: 100%;
+    float: left;
+    object-fit: cover;
+    object-position: right;
+}
+
+.mid-description {
+    display: flex;
+    width: 30%;
+    padding: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.mid-description .mid-prof-text {
+    font-size: 15px;
+    line-height: 1em;
+    float: left;
+}
+
+.mid-description .prof-name,
+.mid-description .prof-game {
+    font-size: 15px;
+    color: #9147FF;
+    text-decoration: none;
+    display: block;
+}
+
+.lang {
+    background-color: #2A2A2D;
+    border-radius: 1em;
+    line-height: 1.5em;
+    padding: 0.25em 0.75em;
+    font-size: 15px;
+}
+
+.mid-description > p {
+    font-size: 15px;
+    line-height: 1.25em;
 }
 
 .bottom-box {
