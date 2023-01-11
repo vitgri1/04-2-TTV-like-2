@@ -359,6 +359,18 @@ header.container {
 
 .bar-item {
     width: 200px;
+    position: relative;
+}
+
+.views {
+    position: absolute;
+    top: calc(120px - 2em);
+    left: 0.5em;
+    background-color: #0005;
+    line-height: 1em;
+    padding: 0.25em;
+    font-size: 15px;
+    border-radius: 0.3em;
 }
 
 .bar-item > img {
