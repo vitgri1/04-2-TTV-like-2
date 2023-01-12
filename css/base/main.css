@@ -142,37 +142,6 @@ header.container {
     width: 100%;
 }
 
-.prof-pic{
-    float: left;
-    height: 40px;
-    width: 40px;
-}
-
-.prof-text {
-    float: left;
-}
-
-.prof-name,
-.prof-game{
-    font-size: 20px;
-    line-height: 1em;
-    color: #fff;
-}
-
-.prof-game{
-    color: #3D3D40;
-}
-
-.prof-num{
-    float: right;
-    color: #fff;
-}
-
-.prof-num::before{
-    content: '•';
-    color: red;
-}
-
 @media (max-width: 1200px) {
     .left-column .fa-video-camera {
         display: block;
