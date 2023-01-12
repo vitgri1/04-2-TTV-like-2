@@ -1,6 +1,12 @@
 .item-des {
 }
 
+.icon {
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+
 .icon-a {
     width: 30%;
     float: left;
@@ -49,4 +55,34 @@
 
 .tag.btn:hover {
     background-color: #1b1b1d;
+}
+
+.left-profile .name,
+.left-profile .game{
+    font-size: 20px;
+}
+
+.left-profile .game{
+    color: #3D3D40;
+}
+
+.view-num{
+    float: right;
+    color: #fff;
+}
+
+.view-num::before{
+    content: '•';
+    color: red;
+}
+
+@media (max-width: 1200px) {
+    .left-profile .text,
+    .left-profile .view-num {
+        display: none;
+    }
+    .left-column {
+        width: auto;
+        align-items: center;
+    }
 }
