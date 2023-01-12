@@ -146,9 +146,7 @@ header.container {
     .left-column .fa-video-camera {
         display: block;
     }
-    .left-column > section,
-    .prof-text,
-    .prof-num {
+    .left-column > section {
         display: none;
     }
     .left-column {

@@ -28,7 +28,8 @@
 
 .title,
 .name,
-.game {
+.game,
+.viewers {
     font-size: 15px;
     line-height: 1em;
     text-decoration: none;
@@ -81,8 +82,13 @@
     .left-profile .view-num {
         display: none;
     }
-    .left-column {
-        width: auto;
-        align-items: center;
-    }
+}
+
+.mid-description .text {
+    width: calc(100% - 40px);
+}
+
+.mid-description .name,
+.mid-description .game {
+    color: #9147FF;
 }
