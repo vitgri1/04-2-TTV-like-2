@@ -93,6 +93,15 @@
     line-height: 1.25em;
 }
 
+@media (max-width: 1200px) {
+    .under-1,
+    .under-2,
+    .under-3,
+    .under-4 {
+        display: none;
+    }
+}
+
 @media (max-width: 640px) {
     .mid-description .mid-prof-text,
     .mid-description .lang,
