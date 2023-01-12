@@ -1,0 +1,52 @@
+.item-des {
+}
+
+.icon-a {
+    width: 30%;
+    float: left;
+    padding: 2px;
+}
+
+.icon-a > img{
+    width: 100%;
+    float: left;
+}
+
+.text {
+    float: left;
+    margin-top: 5px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title,
+.name,
+.game {
+    font-size: 15px;
+    line-height: 1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.title{
+    font-size: 1.2em;   
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.tag {
+    background-color: #2A2A2D;
+    border-radius: 1em;
+    line-height: 1.5em;
+    padding: 0.25em 0.75em;
+    font-size: 12px;
+}
+
+.tag.btn:hover {
+    background-color: #1b1b1d;
+}
