@@ -5,6 +5,7 @@
     float: left;
     height: 40px;
     width: 40px;
+    user-select: none;
 }
 
 .icon-a {
@@ -34,6 +35,7 @@
     line-height: 1em;
     text-decoration: none;
     color: #fff;
+    user-select: none;
 }
 
 .title{
@@ -70,6 +72,7 @@
 .view-num{
     float: right;
     color: #fff;
+    user-select: none;
 }
 
 .view-num::before{
