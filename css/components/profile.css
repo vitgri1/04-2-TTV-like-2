@@ -1,0 +1,97 @@
+.item-des {
+}
+
+.icon {
+    float: left;
+    height: 40px;
+    width: 40px;
+    user-select: none;
+}
+
+.icon-a {
+    width: 30%;
+    float: left;
+    padding: 2px;
+}
+
+.icon-a > img{
+    width: 100%;
+    float: left;
+}
+
+.text {
+    float: left;
+    margin-top: 5px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title,
+.name,
+.game,
+.viewers {
+    font-size: 15px;
+    line-height: 1em;
+    text-decoration: none;
+    color: #fff;
+    user-select: none;
+}
+
+.title{
+    font-size: 1.2em;   
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.tag {
+    background-color: #2A2A2D;
+    border-radius: 1em;
+    line-height: 1.5em;
+    padding: 0.25em 0.75em;
+    font-size: 12px;
+}
+
+.tag.btn:hover {
+    background-color: #1b1b1d;
+}
+
+.left-profile .name,
+.left-profile .game{
+    font-size: 20px;
+}
+
+.left-profile .game{
+    color: #3D3D40;
+}
+
+.view-num{
+    float: right;
+    color: #fff;
+    user-select: none;
+}
+
+.view-num::before{
+    content: '•';
+    color: red;
+}
+
+@media (max-width: 1200px) {
+    .left-profile .text,
+    .left-profile .view-num {
+        display: none;
+    }
+}
+
+.mid-description .text {
+    width: calc(100% - 40px);
+}
+
+.mid-description .name,
+.mid-description .game {
+    color: #9147FF;
+}

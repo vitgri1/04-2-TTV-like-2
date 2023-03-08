@@ -1,3 +1,10 @@
+@import '../3rd-party/font-awesome.min.css';
+/* components */
+@import '../components/button.css';
+@import '../components/middle-content.css';
+@import '../components/profile.css';
+@import '../components/search.css';
+
 body,
 body * {
 box-sizing: border-box;
@@ -5,6 +12,274 @@ margin: 0;
 padding: 0;
 }
 
-base{
+body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: aquamarine;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    display: inline-block;
+    background-color: #0E0E10;
+    color: #fff;
+}
+
+/* header */
+
+header.container {
+    background-color: #18181B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    user-select: none;
+}
+
+.header-left{
+    display: flex;
+    gap: 25px;
+}
+
+.logo {
+    float: left;
+    margin-left: 10px;
+}
+
+.header-left > a > img {
+    height: 25px;
+    object-fit: contain;
+    float: left;
+}
+
+.browse,
+.fa-ellipsis-v
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.25em;
+}
+
+.header-right {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    line-height: 1.25em;
+    align-items: center;
+}
+
+.header-right > .fa-ship, 
+.header-right > .fa-user{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.mini {
+    display: none;
+}
+
+.sign-up{
+    background-color: #9147FF;
+}
+
+@media (max-width: 640px) {
+    .browse,
+    .search > div:first-of-type,
+    .header-right > .btn{
+        display: none;
+    }
+    .search{
+        width: auto;
+    }
+    .header-right > .mini,
+    .search > div:last-of-type {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 360px) {
+    .search,
+    .mini{
+        display: none;
+    }
+}
+/* left column */
+
+.left-column{
+    width: 20%;
+    float: left;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1F1F23;
+}
+
+.left-column > section{
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 1.25em;
+}
+
+.left-column .fa-arrow-left{
+    color: #fff;
+    text-decoration: none;
+    float: right;
+}
+
+.left-column .fa-video-camera{
+    color: #fff;
+    text-decoration: none;
+    display: none;
+    height: 40px;
+    line-height: 40px;
+}
+
+.left-profile-box{
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .left-column .fa-video-camera {
+        display: block;
+    }
+    .left-column > section {
+        display: none;
+    }
+    .left-column {
+        width: auto;
+        align-items: center;
+    }
+}
+
+/* right column */
+
+.right-column {
+    background-color: burlywood;
+}
+
+.top-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+}
+
+.nav-left,
+.nav-right {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 1em;
+}
+
+.nav-left:hover,
+.nav-right:hover {
+    text-shadow: 0 1px 5px #9147FF;
+}
+
+/* bottom box */
+
+.bottom-box {
+    padding: 10px;
+    float: right;
+    width: 80%;
+}
+
+.channels {
+    color: #9147FF;
+    text-decoration: none;
+}
+
+.content-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.bar-item {
+    width: 200px;
+    position: relative;
+    user-select: none;
+}
+
+.views {
+    position: absolute;
+    top: calc(120px - 2em);
+    left: 0.5em;
+    background-color: #0005;
+    line-height: 1em;
+    padding: 0.25em;
+    font-size: 15px;
+    border-radius: 0.3em;
+}
+
+.bar-item > img {
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+    float: left;
+}
+
+@media (max-width: 1200px) {
+    .bottom-box {
+        width: calc(100% - 60px);
+    }
+}
+
+/* footer */
+
+footer.container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5C16C5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    animation-name: footer-slide;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes footer-slide {
+    0% {
+        transform: translateY(0)
+    }
+    50% {
+        transform: translateY(100%)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+footer img {
+    height: 40px;
+    object-fit: contain;
+    float: left;
+}
+
+footer p {
+    margin: 0.375em;
+    float: left;
+    font-size: 20px;
+    line-height: 1.25em;
+}
+
+footer a.btn {
+    float: right;
+    color: #000;
+    background-color: #fff;
+    margin-right: 1em;
+    font-size: 16px;
 }

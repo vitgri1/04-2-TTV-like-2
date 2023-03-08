@@ -1,0 +1,10 @@
+.btn {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    background-color: #2A2A2D;
+    padding: 0.5em 0.75em;
+    border-radius: 0.5em;
+    line-height: 1.25em;
+    user-select: none;
+}
